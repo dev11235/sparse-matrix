@@ -1,13 +1,13 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class SparseMatrixSupportImplTest {
+public class SparseMatrixSupportImplTest {
 
   @Test
-  void fromStream() {
+  public void fromStream() {
     int[] arrayOfMatrixValues = {3, 5, 98, 29, 0, 0, 35, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0};
 
     SparseMatrix matrix = new SparseMatrixSupportImpl()
